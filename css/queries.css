@@ -1,0 +1,150 @@
+/*------------------------------------------------- */
+/* Big tablets to 1499px (widths smaller that the 1024px row) */
+/*------------------------------------------------- */
+
+@media only screen and (max-width: 1499px) {
+    .navigation__item-link:link,
+    .navigation__item-link:visited {
+        margin-right: 1rem
+    }
+
+    .navigation__item-link:first-child {
+        margin-left: 2rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    input[type=text] {
+        width: 80%;
+        margin: 1px auto 10rem auto;
+    }
+
+    .main__title {
+        padding-top: 3rem;
+    }
+}
+
+/*------------------------------------------------- */
+/* Small tablets to big tablets: from 768px to 1023px */
+/*------------------------------------------------- */
+
+@media only screen and (max-width: 1023px) {
+    .navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .navigation__item {
+        width: 100%;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .btn-full {
+        margin-bottom: 1rem;
+    }
+
+    .main {
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .main__text {
+        padding: 5rem 0 0 0;
+        text-align: center;
+    }
+
+    input[type=text] {
+        margin: 2rem auto 2rem auto;
+    }
+
+    .grid-content {
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+        gap: 0.5rem;
+    }
+}
+
+/*------------------------------------------------- */
+/* Small Phones to small tablets: from 481px to 767px */
+/*------------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 1.4rem;
+    }
+
+    .main__title {
+        margin: 5rem;
+    }
+
+    .grid-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "side" "content";
+        gap: 1rem;
+    }
+
+    .side-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .side-list li {
+        margin: 1rem 2rem 1rem 1rem;
+    }
+
+    .about-us-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .about-us-wrapper__item {
+        margin: 1rem 0;
+    }
+}
+
+/*------------------------------------------------- */
+/* Small Phones: from 0px (можно с 360 чекать) to 480px */
+/*------------------------------------------------- */
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 200%;
+    }
+
+    .grid-header {
+        justify-content: space-around;
+    }
+
+    .grid-header__text_extra {
+        margin-left: 1rem;
+    }
+
+    .grid-wrapper {
+        gap: 2rem
+    }
+
+    .side-list li {
+        margin: 1rem 3rem 1rem 1rem;
+
+    }
+
+    .page-bar {
+        margin: 2rem 0;
+    }
+
+    .page-bar__item:link:last-child,
+    .page-bar__item:visited:last-child {
+        width: 8rem;
+    }
+
+    .about-us-wrapper {
+        justify-content: center;
+    }
+}
